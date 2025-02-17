@@ -1,0 +1,169 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FAF9F6; /* Soft Off-White */
+  color: #2A2A2A;
+}
+
+/* Header */
+header {
+  background-color: #008080; /* Teal */
+  color: #FFFFFF;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #B87333; /* Copper */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #B87333; /* Copper */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #FFFFFF;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #008080; /* Teal */
+  color: #FFFFFF;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #B87333; /* Copper */
+  color: #FFFFFF;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #9B5D2E;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 50px;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-box {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  width: 22%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.feature-box i {
+  font-size: 40px;
+  color: #008080;
+}
+
+/* About */
+.about {
+  background-color: #008080;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  padding: 50px;
+}
+
+.testimonial {
+  margin: 20px auto;
+  width: 50%;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #008080;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #008080;
+  color: white;
+  padding: 10px;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
